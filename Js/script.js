@@ -50,11 +50,28 @@ btnGenera.addEventListener( "click",
         console.log(price);
 
         //5. Stampare in HTML
+        document.getElementById("passeggero").innerHTML = nome;
+        document.getElementById("offerta").innerHTML = age;
+        document.getElementById("prezzo").innerHTML = price;
+
+        //6. Far apparire il biglietto
+        document.getElementById("Biglietto").classList.add("biglietto_open");
 
     }
 
 ); 
 
-// 6. al click del bottone annulla
-// nascondere il biglietto
-// svuotare i campi 
+// 7. al click del bottone annulla
+btnAnnulla.addEventListener( "click",
+
+    function() {
+        // nascondere il biglietto
+        document.getElementById("Biglietto").classList.remove("biglietto_open");
+
+        // svuotare i campi
+        document.getElementById("name").value = "";
+        document.getElementById("km").value = "";
+        document.getElementById("age").value = "";
+    }
+
+);
