@@ -13,14 +13,37 @@ Questo richiederà un minimo di ricerca. */
 
 // PROGRAMMA 
 // 1. seleziono il bottone
+var btnGenera = document.getElementById("genera"); 
+var btnAnnulla = document.getElementById("annulla");
 
-// 2. al click del bottone genera 
+// 2. al click del bottone genera
+btnGenera.addEventListener( "click",
 
-// inserire la logica di programmazione per generare il biglietto
+    // inserire la logica di programmazione per generare il biglietto
+    function() {
 
-// 3. raccolgo i valori dei campi input e select all'interno di variabili
+        // 3. raccolgo i valori dei campi input e select all'interno di variabili
+        var nome = document.getElementById("name").value;
+        console.log(nome);
+        var km = parseInt(document.getElementById("km").value);
+        console.log(km);
+        var age = document.getElementById("age").value;
+        console.log(age);
+        // var price = 0;
 
-// 4. calcolo il prezzo del biglietto
+        // // 4. calcolo il prezzo del biglietto
+        // if (age < 18) {
+        //     var price = km * 0.21 * 80 /100; 
+         
+        // } else if (age > 65) {
+        //     var price = km * 0.21 * 60 /100;
+        // } else {
+        //     var price = km * 0.21
+        // }  
+
+    }
+
+); 
 
 // 5. al click del bottone annulla
 // nascondere il biglietto

@@ -9,12 +9,24 @@ body {
     text-align: center;
     color: rgb(0, 0, 0);
     font-family: Arial;
-    background-color: rgb(146, 61, 68);
+    background-color: rgb(187, 60, 71);
 }
+.titolo {
+    color: white;
+    margin-bottom: 30px;
+}
+
 /*---------------------- container  ----------------------*/
 .container {
     margin: auto;
     margin-top: 100px;
     width: 80%;
+    /* background-color: rgb(233, 233, 233); */
+    /* border-radius: 10px; */
+}
+ .form, .biglietto {
     background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    margin-bottom: 100px;
+    padding: 50px 0px;
 }
