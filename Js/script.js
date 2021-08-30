@@ -29,17 +29,19 @@ btnGenera.addEventListener( "click",
         console.log(km);
         var age = document.getElementById("age").value;
         console.log(age);
-        // var price = 0;
 
         // // 4. calcolo il prezzo del biglietto
-        // if (age < 18) {
-        //     var price = km * 0.21 * 80 /100; 
+        if (age == "minorenne") {
+            var price = km * 0.21 * 80 /100; 
          
-        // } else if (age > 65) {
-        //     var price = km * 0.21 * 60 /100;
-        // } else {
-        //     var price = km * 0.21
-        // }  
+        } else if (age == "over 65") {
+            var price = km * 0.21 * 60 /100;
+
+        } else {
+            var price = km * 0.21
+        }
+        
+        console.log(price);
 
     }
 
