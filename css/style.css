@@ -1,0 +1,20 @@
+/*---------------------- RESET ----------------------*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*---------------------- COMMON ----------------------*/
+body {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    background-color: rgb(146, 61, 68);
+}
+/*---------------------- container  ----------------------*/
+.container {
+    margin: auto;
+    margin-top: 100px;
+    width: 80%;
+    background-color: rgb(233, 233, 233);
+}
