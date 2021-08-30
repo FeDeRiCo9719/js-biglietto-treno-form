@@ -25,12 +25,19 @@ btnGenera.addEventListener( "click",
         // 3. raccolgo i valori dei campi input e select all'interno di variabili
         var nome = document.getElementById("name").value;
         console.log(nome);
+
         var km = parseInt(document.getElementById("km").value);
+        // validazione numero intero
+        while ( km <= 0 ) {
+            alert("dato non valido, riprova");
+            km = parseInt(document.getElementById("km").value = "");
+        }
         console.log(km);
+
         var age = document.getElementById("age").value;
         console.log(age);
 
-        // // 4. calcolo il prezzo del biglietto
+        // 4. calcolo il prezzo del biglietto
         if (age == "minorenne") {
             var price = km * 0.21 * 80 /100; 
          
@@ -38,15 +45,16 @@ btnGenera.addEventListener( "click",
             var price = km * 0.21 * 60 /100;
 
         } else {
-            var price = km * 0.21
+            var price = km * 0.21;
         }
-        
         console.log(price);
+
+        //5. Stampare in HTML
 
     }
 
 ); 
 
-// 5. al click del bottone annulla
+// 6. al click del bottone annulla
 // nascondere il biglietto
 // svuotare i campi 
