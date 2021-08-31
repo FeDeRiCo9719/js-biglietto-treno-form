@@ -24,38 +24,56 @@ btnGenera.addEventListener( "click",
 
         // 3. raccolgo i valori dei campi input e select all'interno di variabili
         var nome = document.getElementById("name").value;
-        console.log(nome);
-
         var km = parseInt(document.getElementById("km").value);
-        // validazione numero intero
-        while ( km <= 0 ) {
-            alert("dato non valido, riprova");
-            km = parseInt(document.getElementById("km").value = "");
-        }
-        console.log(km);
-
         var age = document.getElementById("age").value;
-        console.log(age);
 
-        // 4. calcolo il prezzo del biglietto
-        if (age == "minorenne") {
-            var price = km * 0.21 * 80 /100; 
-         
-        } else if (age == "over 65") {
-            var price = km * 0.21 * 60 /100;
+        if ( nome!== "" &&  km > 0  ) {
+            var price = km * 0.21;
+            var offerta = "biglietto standard";
+
+            if (age == "minorenne") {
+                var price = km * 0.21 * 80 /100;
+                offerta = "sconto Minorenne"; 
+            
+            } else if (age == "over 65") {
+                var price = km * 0.21 * 60 /100;
+                offerta = "sconto Silver";
+            }
+            price = price.toFixed(2);
+
+            //5. Stampare in HTML
+            document.getElementById("passeggero").innerHTML = nome;
+            document.getElementById("offerta").innerHTML = offerta;
+            document.getElementById("prezzo").innerHTML = price + " £";
+
+            //6. Far apparire il biglietto
+            document.getElementById("Biglietto").classList.add("biglietto_open");
 
         } else {
-            var price = km * 0.21;
+            alert("ERROR");
         }
-        console.log(price);
 
-        //5. Stampare in HTML
-        document.getElementById("passeggero").innerHTML = nome;
-        document.getElementById("offerta").innerHTML = age;
-        document.getElementById("prezzo").innerHTML = price;
+        // 4. calcolo il prezzo del biglietto
+        // var price = km * 0.21;
+        // var offerta = "biglietto standard";
 
-        //6. Far apparire il biglietto
-        document.getElementById("Biglietto").classList.add("biglietto_open");
+        // if (age == "minorenne") {
+        //     var price = km * 0.21 * 80 /100;
+        //     offerta = "sconto Minorenne"; 
+         
+        // } else if (age == "over 65") {
+        //     var price = km * 0.21 * 60 /100;
+        //     offerta = "sconto Silver";
+        // }
+        // price = price.toFixed(2);
+
+        // //5. Stampare in HTML
+        // document.getElementById("passeggero").innerHTML = nome;
+        // document.getElementById("offerta").innerHTML = offerta;
+        // document.getElementById("prezzo").innerHTML = price + " £";
+
+        // //6. Far apparire il biglietto
+        // document.getElementById("Biglietto").classList.add("biglietto_open");
 
     }
 
