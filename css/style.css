@@ -9,7 +9,7 @@ body {
     text-align: center;
     color: rgb(0, 0, 0);
     font-family: Arial;
-    background-color: rgb(187, 60, 71);
+    background-color: rgb(60, 119, 187);
 }
 .titolo {
     color: white;
@@ -21,7 +21,7 @@ body {
 .container {
     margin: auto;
     margin-top: 100px;
-    width: 80%;
+    width: 60%;
     /* background-color: rgb(233, 233, 233); */
     /* border-radius: 10px; */
 }
@@ -29,11 +29,55 @@ body {
     background-color: rgb(233, 233, 233);
     border-radius: 10px;
     margin-bottom: 100px;
-    padding: 50px 0px;
+    padding: 20px 0px;
 }
 .biglietto_close {
     display: none;
 }
 .biglietto_open {
     display: block;
+}
+
+/*---------------------- form  ----------------------*/
+.info-form {
+    /* background-color: rgba(137, 43, 226, 0.315); */
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.info-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.info-form input,select {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+.name, .km, .age {
+    /* border: 1px solid red; */
+    /* text-align: center; */
+}
+.button-box {
+    /* background-color: aquamarine; */
+}
+.Button {
+    padding: 7px 10px;
+    margin: 0px 10px;
+    border-radius: 7px;
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+    font-weight: 700;
+    background-color: darkgrey;
+    border: 1px solid darkgrey;
+}
+
+.Button:hover {
+    background-color: rgb(116, 116, 116);
+    border-color:rgb(116, 116, 116);
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
 }

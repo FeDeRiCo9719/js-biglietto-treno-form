@@ -13,26 +13,31 @@
             <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
         </div>
         <div class="form">
-            <!-- nome e cognome -->
-            <label for="nome">Nome e Cognome</label>
-            <input type="text" name="nome" id="name" placeholder="Inserisci il tuo nome">
-
-            <!-- km da percorrre -->
-            <label for="km">Percorso</label>
-            <input type="number" name="km" id="km" placeholder="inserisci i Km">
-
-            <!-- età -->
-            <label for="età">Fascia d'età</label>
-            <select name="età" id="age">
-                <option value="minorenne">Minorenne</option>
-                <option value="maggiorenne">Maggiorenne</option>
-                <option value="over 65">Over 65</option>
-            </select>
-
+            <div class="info-form">
+                <!-- nome e cognome -->
+                <div class="name">
+                    <label for="nome">Nome e Cognome</label>
+                    <input type="text" name="nome" id="name" placeholder="Inserisci il tuo nome">
+                </div>
+                <!-- km da percorrre -->
+                <div class="km">
+                    <label for="km">Percorso</label>
+                    <input type="number" name="km" id="km" placeholder="inserisci i Km">
+                </div>
+                <!-- età -->
+                <div class="age">
+                    <label for="età">Fascia d'età</label>
+                    <select name="età" id="age">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over 65">Over 65</option>
+                    </select>
+                </div>
+            </div>
             <!-- bottoni -->
-            <div id="bottoni_biglietti">
-                <button id="genera">genera</button>
-                <button id="annulla">annulla</button>
+            <div id="bottoni_biglietti" class="button-box">
+                <button id="genera" class="Button">Genera</button>
+                <button id="annulla" class="Button">Annulla</button>
             </div>
         </div>
 
