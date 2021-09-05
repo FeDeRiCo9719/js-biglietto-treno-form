@@ -25,11 +25,15 @@ body {
     /* background-color: rgb(233, 233, 233); */
     /* border-radius: 10px; */
 }
- .form, .biglietto {
-    background-color: rgb(233, 233, 233);
-    border-radius: 10px;
+.form {
+    border: 3px solid rgb(255, 255, 255);
     margin-bottom: 100px;
     padding: 20px 0px;
+    background-color: rgb(233, 233, 233);
+}
+ .form, .biglietto {
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.178);
+    border-radius: 10px;
 }
 .biglietto_close {
     display: none;
@@ -80,4 +84,37 @@ body {
     color: white;
     transition: 0.2s;
     cursor: pointer;
+}
+
+/*---------------------- biglietto  ----------------------*/
+.biglietto {
+    margin: auto;
+    width: 60%;
+    background-color: rgb(233, 95, 71);
+    padding: 20px 0px;
+    color: white;
+}
+.biglietto h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    text-align: left;
+}
+.ticket {
+    text-align: left;
+    padding: 20px 0px;
+    background-color: rgb(248, 234, 206);
+    color: rgb(70, 70, 70);
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+}
+.ticket h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.ticket p {
+    margin-bottom: 30px;
+    font-size: 16px;
 }
